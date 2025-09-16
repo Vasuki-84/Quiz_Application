@@ -73,7 +73,15 @@ function startQuiz() {
 
 // for loading questions :
 function loadQuestion() {
-    
+    const q = questions[index];
+    questionText.innerText = q.q;
+
+    optionsBox.innerHTML="";
+    q.options.forEach(data=> {
+        const btn = document.createElement("button");
+        btn.className = "btn btn-outline-primary";
+        btn.innerText = data;
+    })
 }
 
 
