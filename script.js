@@ -102,6 +102,20 @@ function checkAnswer(selected,btn)
 
     //disable other options if one is selected
     Array.from(optionsBox.children).forEach(button => button.disabled = true);
+    nextBtn.classList.remove("d-none");
+}
+
+// Next question 
+function nextquestion(){
+    index++;
+
+    if(index < questions.length ){
+        nextBtn.classList.add("d-none");
+        loadQuestion();
+    }else{
+        showRe
+
+    }
 }
 
 
