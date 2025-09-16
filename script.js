@@ -81,7 +81,27 @@ function loadQuestion() {
         const btn = document.createElement("button");
         btn.className = "btn btn-outline-primary";
         btn.innerText = data;
+        btn.onclick = () => checkAnswer(data,btn);
+        optionsBox.appendChild(btn);
     })
+}
+
+//check answer :
+function checkAnswer(selected,btn)
+{
+    const correct = questions[index].answer;
+
+    // answer checking condition
+    if(selected === correct)
+    {
+        btn.classList.replace("btn-outline-primary", "btn-success");
+        score++;
+    }else{
+        btn.classList.replace("btn-outline-primary", "btn-danger");
+    }
+
+    //disable other options if one is selected
+    Array.from(optionsBox.children).forEach(button => button.disabled = true);
 }
 
 
