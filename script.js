@@ -40,7 +40,19 @@ let index = 0 ;
 let score = 0 ;
 let username = "" ;
 
+// ID elements :
+const questionText = document.getElementById("questionText");
+const optionsBox = document.getElementById("optionsBox");
+const nextBtn = document.getElementById("nextBtn");
+const quizBox = document.getElementById("quizBox");
+const resultBox = document.getElementById("resultBox");
+const resultText = document.getElementById("resultText");
 
+// show modal on page load : 
+window.onload = () => {
+    const modal = new bootstrap.Modal.document(getElementById("usernameModal"));
+    modal.show();
+}
 
 
 
