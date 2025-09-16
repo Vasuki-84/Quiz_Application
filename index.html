@@ -29,12 +29,25 @@
                 </div>
 
                 <div class="modal-footer">
-                    <button class="btn btn-primary">Start Quiz</button>
+                    <button onclick="startQuiz()" class="btn btn-primary">Start Quiz</button>
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- Quiz section -->
+    <div class="quiz-box text-center" id="quizBox">
+        <h2 id="questionText"> </h2>
+        <div class="options mt-3" id="optionBox"></div>
+        <button class="btn btn-success mt-3 d-none" id="nextBtn" onclick="nextquestion()"> Next </button>
+    </div>
+
+
+    <!-- Result section -->
+    <div class="quiz-box text-center" id="resultBox">
+        <h2>Quiz Completed <i class="bi bi-emoji-laughing"></i> </h2>
+        <p id="resultText" class="fs-4"></p>
+    </div>
 
 
 
