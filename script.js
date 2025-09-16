@@ -113,9 +113,14 @@ function nextquestion(){
         nextBtn.classList.add("d-none");
         loadQuestion();
     }else{
-        showRe
+        showResult();
 
     }
+}
+function showResult(){
+    quizBox.classList.add("d-none");
+    resultBox.classList.remove("d-none");
+    resultText.innerHTML= `${ username}, You scored ${score} out of ${questions.length}`;
 }
 
 
