@@ -13,10 +13,10 @@
 
 </head>
 
-<body>
+<body class="g-gradient">
 
     <!--username input model   -->
-    <div class="modal fade" id="usernameModal" tabindex="-1">
+    <div class="modal fade" class="shadow-lg" id="usernameModal" tabindex="-1">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
 
@@ -36,7 +36,7 @@
     </div>
 
     <!-- Quiz section -->
-    <div class="quiz-box text-center" id="quizBox">
+    <div class="quiz-box text-center" class="shadow-lg" id="quizBox">
         <h2 id="questionText"> </h2>
         <div class="options mt-3 " id="optionsBox"></div>
         <button class="btn btn-success mt-3 d-none" id="nextBtn" onclick="nextquestion()"> Next Question</button>
@@ -44,19 +44,12 @@
 
 
     <!-- Result section -->
-    <div class="">
-        <div class=" pt-5 mt-5 quiz-box text-center mt-2 d-none" id="resultBox">
+    <div class="result">
+        <div class=" pt-5 mt-5 quiz-box text-center mt-2 d-none" class="shadow-lg" id="resultBox">
             <h2>Quiz Completed <i class="bi bi-emoji-laughing"></i> </h2>
             <p id="resultText" class="fs-4 "></p>
         </div>
     </div>
-
-
-
-
-
-
-
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
