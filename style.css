@@ -6,26 +6,50 @@ body {
 }
 
 
+
+
 .quiz-box {
+
+
     padding: 10px;
-    max-width: 600px;
+    width: 100%;
+    max-width: 90%;
     margin: 3rem auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
-   align-items: center;
+    align-items: center;
     padding: 2rem;
     background: #e7eff6;
     border-radius: 8px;
     box-shadow: 0 5px 10px rgb(0, 0, 0, 0.1);
 }
 
+@media (min-width: 576px) {
+    .quiz-box {
+        max-width: 300px;
+    }
+}
+
+@media (min-width: 768px) {
+    .quiz-box {
+        max-width: 500px;
+    }
+}
+
+@media (min-width: 992px) {
+    .quiz-box {
+        max-width: 600px;
+    }
+}
+
+
 .options button {
-    margin: 0.5rem  0;
+    margin: 0.5rem 0;
     width: 100%;
 }
 
-.result{
+.result {
     margin: auto;
     margin-top: 50px;
 }
@@ -33,30 +57,25 @@ body {
 
 
 .shadow-glow {
-  animation: glowing 1.5s infinite alternate;
+    animation: glowing 1.5s infinite alternate;
 }
 
 @keyframes glowing {
-  from {
-    box-shadow: 0 0 10px rgba(0, 200, 255, 0.5);
-  }
-  to {
-    box-shadow: 0 0 30px rgba(0, 200, 255, 1);
-  }
+    from {
+        box-shadow: 0 0 10px rgba(0, 200, 255, 0.5);
+    }
+
+    to {
+        box-shadow: 0 0 30px rgba(0, 200, 255, 1);
+    }
 }
 
 .glow-div {
-     margin: 10px auto;
-     padding: 10px;
+    margin: 10px auto;
+    padding: 10px;
 
-  /* Glow */
-  box-shadow:
-   
-    0 0 45px rgba(0, 195, 255, 0.8);
+    /* Glow */
+    box-shadow:
+
+        0 0 45px rgba(0, 195, 255, 0.8);
 }
-
-
-
-
-
-
