@@ -59,7 +59,14 @@ window.onload = () => {
 function startQuiz() {
     const input = document.getElementById("usernameInput").value.trim();
     if (!input) {
-        alert("Please enter your name and continue the Quiz ");
+        // Show Bootstrap modal
+        let myModal = new bootstrap.Modal(document.getElementById('nameModal'));
+        myModal.show();
+
+        document.getElementById("okBtn").addEventListener("click", function () {
+            let modal = new bootstrap.Modal(document.getElementById("usernameModal"));
+            modal.show();
+        });
         return;
     }
     username = input;
@@ -76,27 +83,25 @@ function loadQuestion() {
     const q = questions[index];
     questionText.innerText = q.q;
 
-    optionsBox.innerHTML="";
-    q.options.forEach(data=> {
+    optionsBox.innerHTML = "";
+    q.options.forEach(data => {
         const btn = document.createElement("button");
         btn.className = "btn btn-outline-primary";
         btn.innerText = data;
-        btn.onclick = () => checkAnswer(data,btn);
+        btn.onclick = () => checkAnswer(data, btn);
         optionsBox.appendChild(btn);
     })
 }
 
 //check answer :
-function checkAnswer(selected,btn)
-{
+function checkAnswer(selected, btn) {
     const correct = questions[index].answer;
 
     // answer checking condition
-    if(selected === correct)
-    {
+    if (selected === correct) {
         btn.classList.replace("btn-outline-primary", "btn-success");
         score++;
-    }else{
+    } else {
         btn.classList.replace("btn-outline-primary", "btn-danger");
     }
 
@@ -106,21 +111,21 @@ function checkAnswer(selected,btn)
 }
 
 // Next question 
-function nextquestion(){
+function nextquestion() {
     index++;
 
-    if(index < questions.length ){
+    if (index < questions.length) {
         nextBtn.classList.add("d-none");
         loadQuestion();
-    }else{
+    } else {
         showResult();
 
     }
 }
-function showResult(){
+function showResult() {
     quizBox.classList.add("d-none");
     resultBox.classList.remove("d-none");
-    resultText.innerHTML= `${ username}, You scored ${score} out of ${questions.length}`;
+    resultText.innerHTML = `${username}, You scored ${score} out of ${questions.length}`;
 }
 
 
