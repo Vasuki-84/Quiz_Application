@@ -7,31 +7,31 @@ const questions = [
         options: ["var", "let", "const", "function"],
         answer: "const"
     },
-    {
-        q: "Which method is used to print messages in the console in JavaScript?",
-        options: ["print()", "console.print()", "console.log()", "log.console()"],
-        answer: "console.log()"
-    },
-    {
-        q: "Which symbol is used for single-line comments in JavaScript?",
-        options: ["#", "//", "/*", "<!--"],
-        answer: "//"
-    },
-    {
-        q: "Which company developed JavaScript?",
-        options: ["Microsoft", "Netscape", "Google", "Oracle"],
-        answer: "Netscape"
-    },
-    {
-        q: "What is the default value of an uninitialized variable in JavaScript?",
-        options: ["null", "undefined", "0", "empty string"],
-        answer: "undefined"
-    },
-    {
-        q: "Which method is used to combine two or more arrays in JavaScript?",
-        options: ["append()", "merge()", "concat()", "combine()"],
-        answer: "concat()"
-    }
+    // {
+    //     q: "Which method is used to print messages in the console in JavaScript?",
+    //     options: ["print()", "console.print()", "console.log()", "log.console()"],
+    //     answer: "console.log()"
+    // },
+    // {
+    //     q: "Which symbol is used for single-line comments in JavaScript?",
+    //     options: ["#", "//", "/*", "<!--"],
+    //     answer: "//"
+    // },
+    // {
+    //     q: "Which company developed JavaScript?",
+    //     options: ["Microsoft", "Netscape", "Google", "Oracle"],
+    //     answer: "Netscape"
+    // },
+    // {
+    //     q: "What is the default value of an uninitialized variable in JavaScript?",
+    //     options: ["null", "undefined", "0", "empty string"],
+    //     answer: "undefined"
+    // },
+    // {
+    //     q: "Which method is used to combine two or more arrays in JavaScript?",
+    //     options: ["append()", "merge()", "concat()", "combine()"],
+    //     answer: "concat()"
+    // }
 
 ]
 
