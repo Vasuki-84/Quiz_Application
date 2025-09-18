@@ -149,11 +149,10 @@ function showResult() {
     resultText.innerHTML = `${username}, You scored ${score} out of ${questions.length}`;
 
     if(score === questions.length){
-        `
-        <div> <img src="https://i.pinimg.com/736x/b6/77/6e/b6776ed102c59790ab8c045e5efb358f.jpg" width="500px" height="500px"></div>
-        
-        `
-        
+         resultText.innerHTML = `
+         ${username}, You scored ${score} out of ${questions.length}
+        <div class="m-4 shadow-glow border border-info  rounded" class="rounded"> <img src="https://i.pinimg.com/736x/b6/77/6e/b6776ed102c59790ab8c045e5efb358f.jpg" width="200px" height="200px"></div> 
+        `  
     }
 }
 
