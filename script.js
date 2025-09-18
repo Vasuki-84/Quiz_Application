@@ -147,6 +147,14 @@ function showResult() {
     quizBox.classList.add("d-none");
     resultBox.classList.remove("d-none");
     resultText.innerHTML = `${username}, You scored ${score} out of ${questions.length}`;
+
+    if(score === questions.length){
+        `
+        <div> <img src="https://i.pinimg.com/736x/b6/77/6e/b6776ed102c59790ab8c045e5efb358f.jpg" width="500px" height="500px"></div>
+        
+        `
+        
+    }
 }
 
 
